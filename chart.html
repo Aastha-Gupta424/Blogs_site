@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restful Routing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style type="text/css">
+        .sblue {
+            background-color: rgba(70, 131, 180, 0.822);
+        }
+        .green {
+            background-color: lightgreen;
+        }
+        .blue {
+            background-color: skyblue;
+        }
+        .dyellow {
+            background-color: rgba(238, 238, 25, 0.781);
+        }
+        .lyellow {
+            background-color: rgba(250, 250, 69, 0.712);
+        }
+        .lpink {
+            background-color: rgba(247, 130, 169, 0.938);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="jumbotron">
+                    <h1>Restful Routes</h1>
+                    <p>A table of 7 Restful Routes</p>
+                </div>
+                <table class="table table-hover table-borderd">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Path</th>
+                            <th scope="col">HTTP Verb</th>
+                            <th scope="col">Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="sblue">
+                            <td>Index</td>
+                            <td>/blogs</td>
+                            <td>GET</td>
+                            <td>List of all blogs</td>
+                        </tr>
+                        <tr class="green">
+                            <td>New</td>
+                            <td>/blogs/new</td>
+                            <td>GET</td>
+                            <td>Show new blog form</td>
+                        </tr>
+                        <tr class="green">
+                            <td>Create</td>
+                            <td>/blogs</td>
+                            <td>POST</td>
+                            <td>Create a new blog, then redirect somewhere</td>
+                        </tr>
+                        <tr class="blue">
+                            <td>Show</td>
+                            <td>/blogs/:id</td>
+                            <td>GET</td>
+                            <td>Show info about one specific blog</td>
+                        </tr>
+                        <tr class="dyellow">
+                            <td>Edit</td>
+                            <td>/blogs/:id/edit</td>
+                            <td>GET</td>
+                            <td>Show edit form for one blog</td>
+                        </tr>
+                        <tr class="lyellow">
+                            <td>Update</td>
+                            <td>/blogs/:id</td>
+                            <td>PUT</td>
+                            <td>Update a particular blog, then the redirect somewhere</td>
+                        </tr>
+                        <tr class="lpink">
+                            <td>Destroy</td>
+                            <td>/blogs/:id</td>
+                            <td>DELETE</td>
+                            <td>Delete a particular blog, then the redirect somewhere</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
